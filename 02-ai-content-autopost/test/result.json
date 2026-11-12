@@ -1,0 +1,185 @@
+{
+  "sheets": {
+    "投稿キュー": [
+      [
+        "キーワード",
+        "テーマ・切り口",
+        "参考メモ",
+        "投稿日時",
+        "WP公開方法",
+        "ステータス",
+        "タイトル",
+        "メタディスクリプション",
+        "本文(HTML)",
+        "SNS投稿文",
+        "WordPress URL",
+        "Bluesky URL",
+        "エラー"
+      ],
+      [
+        "GAS 自動化",
+        "中小企業の事務担当者向け",
+        "転記作業が月10時間かかっている",
+        "2026-11-12T15:35:45.138Z",
+        "公開",
+        "公開済み",
+        "GASでスプレッドシートの転記作業を自動化する方法",
+        "毎月の転記作業に時間を取られていませんか。Google Apps Scriptで自動化する手順を、事務担当者向けにわかりやすく解説します。",
+        "<h2>なぜ自動化するのか</h2><p>手作業は<strong>ミス</strong>の原因です。</p>リンク",
+        "スプレッドシートの転記に毎月10時間かかっていませんか？GASで自動化する方法をまとめました。 #業務効率化 #GAS",
+        "https://media.example.com/gas-automation/",
+        "https://bsky.app/profile/nobcelly-demo.bsky.social/post/3kxyz",
+        ""
+      ],
+      [
+        "フォーム 自動返信",
+        "",
+        "",
+        "2026-11-13T16:35:45.138Z",
+        "公開",
+        "公開済み",
+        "フォームの自動返信メールをGASで設定する手順",
+        "毎月の転記作業に時間を取られていませんか。Google Apps Scriptで自動化する手順を、事務担当者向けにわかりやすく解説します。",
+        "<h2>なぜ自動化するのか</h2><p>手作業は<strong>ミス</strong>の原因です。</p>リンク",
+        "Googleフォームに自動返信メールを付ける方法を解説しました。 #GAS",
+        "https://media.example.com/gas-automation/",
+        "https://bsky.app/profile/nobcelly-demo.bsky.social/post/3kxyz",
+        ""
+      ],
+      [
+        "経費精算 効率化",
+        "",
+        "",
+        "2026-11-12T15:35:45.138Z",
+        "下書き",
+        "エラー",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "AIの出力がJSON形式ではありません"
+      ],
+      [
+        "請求書 自動作成",
+        "",
+        "",
+        "2026-11-12T15:35:45.138Z",
+        "下書き",
+        "公開済み",
+        "請求書作成をスプレッドシートで自動化する方法",
+        "毎月の転記作業に時間を取られていませんか。Google Apps Scriptで自動化する手順を、事務担当者向けにわかりやすく解説します。",
+        "<h2>なぜ自動化するのか</h2><p>手作業は<strong>ミス</strong>の原因です。</p>リンク",
+        "毎月の請求書作成を自動化する方法をまとめました。 #業務効率化",
+        "https://media.example.com/gas-automation/",
+        "https://bsky.app/profile/nobcelly-demo.bsky.social/post/3kxyz",
+        ""
+      ],
+      [
+        "キー未設定",
+        "",
+        "",
+        "2026-11-12T15:35:45.138Z",
+        "下書き",
+        "承認待ち",
+        "【デモ】スプレッドシート業務を自動化する3つの方法",
+        "APIキー未設定のため、デモ用の固定文を表示しています。設定後は指定キーワードに合わせた記事が生成されます。",
+        "<h2>デモ記事</h2><p>APIキーを設定すると、ここに生成された本文が入ります。</p>",
+        "【デモ】スプレッドシートの手作業を減らす方法をまとめました。 #業務効率化",
+        null,
+        null,
+        ""
+      ]
+    ],
+    "処理ログ": [
+      [
+        "日時",
+        "処理",
+        "行",
+        "詳細"
+      ],
+      [
+        "2026-11-12T16:35:45.139Z",
+        "生成",
+        2,
+        "GASでスプレッドシートの転記作業を自動化する方法"
+      ],
+      [
+        "2026-11-12T16:35:45.139Z",
+        "生成",
+        3,
+        "フォームの自動返信メールをGASで設定する手順"
+      ],
+      [
+        "2026-11-12T16:35:45.139Z",
+        "生成エラー",
+        4,
+        "AIの出力がJSON形式ではありません"
+      ],
+      [
+        "2026-11-12T16:35:45.140Z",
+        "公開エラー",
+        2,
+        "HTTP 503: Service Unavailable"
+      ],
+      [
+        "2026-11-12T16:35:45.141Z",
+        "公開",
+        2,
+        "https://media.example.com/gas-automation/ / https://bsky.app/profile/nobcelly-demo.bsky.social/post/3kxyz"
+      ],
+      [
+        "2026-11-12T16:35:45.141Z",
+        "公開",
+        3,
+        "https://media.example.com/gas-automation/ / https://bsky.app/profile/nobcelly-demo.bsky.social/post/3kxyz"
+      ],
+      [
+        "2026-11-12T16:35:45.141Z",
+        "生成",
+        5,
+        "請求書作成をスプレッドシートで自動化する方法"
+      ],
+      [
+        "2026-11-12T16:35:45.141Z",
+        "公開",
+        5,
+        "https://media.example.com/gas-automation/ / https://bsky.app/profile/nobcelly-demo.bsky.social/post/3kxyz"
+      ],
+      [
+        "2026-11-12T16:35:45.141Z",
+        "生成",
+        6,
+        "【デモ】スプレッドシート業務を自動化する3つの方法"
+      ]
+    ]
+  },
+  "requests": {
+    "wordpress": {
+      "title": "GASでスプレッドシートの転記作業を自動化する方法",
+      "content": "<h2>なぜ自動化するのか</h2><p>手作業は<strong>ミス</strong>の原因です。</p>リンク",
+      "excerpt": "毎月の転記作業に時間を取られていませんか。Google Apps Scriptで自動化する手順を、事務担当者向けにわかりやすく解説します。",
+      "status": "publish"
+    },
+    "bluesky": {
+      "$type": "app.bsky.feed.post",
+      "text": "スプレッドシートの転記に毎月10時間かかっていませんか？GASで自動化する方法をまとめました。 #業務効率化 #GAS\nhttps://media.example.com/gas-automation/",
+      "createdAt": "2026-11-12T16:35:45.140Z",
+      "facets": [
+        {
+          "index": {
+            "byteStart": 154,
+            "byteEnd": 195
+          },
+          "features": [
+            {
+              "$type": "app.bsky.richtext.facet#link",
+              "uri": "https://media.example.com/gas-automation/"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

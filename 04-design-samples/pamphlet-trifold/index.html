@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>会社案内 三つ折りパンフレット（デザインサンプル）</title>
+<style>
+/* A4横 297x210mm・三つ折り（巻三つ折り：100/100/97mm） 塗り足し3mm */
+@page{size:303mm 216mm;margin:0}
+:root{--navy:#123a5c;--blue:#1f6fae;--green:#3d9a6a;--ink:#26323c;--sub:#5d6a74;--line:#d8e0e6;--pale:#eef4f8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Noto Sans CJK JP",sans-serif;color:var(--ink);background:#9aa3a9}
+.sheet{width:303mm;height:216mm;background:#fff;position:relative;display:grid;grid-template-columns:100mm 100mm 103mm;padding:3mm 0;margin:10mm auto;overflow:hidden}
+.sheet .p{position:relative;height:210mm;overflow:hidden}
+.sheet .p:first-child{margin-left:3mm;width:97mm}
+.label{font-family:"Noto Sans CJK JP";font-size:8px;color:#fff;background:#333;position:absolute;left:3mm;top:-7mm;padding:1mm 2mm}
+.guide{position:absolute;top:0;bottom:0;border-left:0.2mm dashed rgba(0,0,0,.18)}
+.inner-p{padding:13mm 9mm 10mm}
+h3{font-size:17px;color:var(--navy);font-weight:700;letter-spacing:.06em;line-height:1.5}
+.en{font-size:8px;letter-spacing:.3em;color:var(--blue);font-weight:700}
+p,li,td,th{font-size:10px;line-height:1.85;letter-spacing:.03em}
+.bar{width:12mm;height:1.2mm;background:linear-gradient(90deg,var(--blue) 0 60%,var(--green) 60%);margin:3mm 0 5mm}
+
+/* 表紙 */
+.cover{background:var(--navy);color:#fff}
+.cover img{height:118mm;object-fit:cover;width:100%;display:block}
+.cover .stripe{height:2mm;background:linear-gradient(90deg,var(--blue) 0 70%,var(--green) 70%)}
+.cover .t{padding:9mm 9mm 0}
+.cover .catch{font-size:19px;font-weight:700;line-height:1.55;letter-spacing:.08em}
+.cover .sub{font-size:8.5px;opacity:.85;margin-top:4mm;line-height:1.8}
+.cover .co{position:absolute;left:9mm;bottom:10mm;display:flex;align-items:center;gap:3mm}
+.mark{width:9mm;height:9mm;position:relative}
+.mark i{position:absolute;width:5.2mm;height:5.2mm}
+.mark i:nth-child(1){left:0;top:0;background:#fff}
+.mark i:nth-child(2){right:0;bottom:0;background:var(--green)}
+.co b{font-size:12px;letter-spacing:.12em;display:block}
+.co small{font-size:6.5px;letter-spacing:.2em;opacity:.8}
+
+/* 裏表紙（会社概要） */
+.back{background:var(--pale)}
+.back table{width:100%;border-collapse:collapse;margin-top:2mm}
+.back th{width:19mm;text-align:left;font-weight:700;color:var(--navy);vertical-align:top;padding:1.6mm 0;border-bottom:0.2mm solid var(--line)}
+.back td{padding:1.6mm 0;border-bottom:0.2mm solid var(--line)}
+.back .map{height:34mm;margin-top:5mm;background:repeating-linear-gradient(0deg,#dde6ec 0 .2mm,transparent .2mm 6mm),repeating-linear-gradient(90deg,#dde6ec 0 .2mm,transparent .2mm 6mm),#fff;position:relative}
+.back .map:before{content:"";position:absolute;left:0;right:0;top:55%;height:2.4mm;background:#c9d6df}
+.back .map:after{content:"";position:absolute;left:58%;top:30%;width:4mm;height:4mm;background:var(--green);transform:rotate(45deg)}
+.back .contact{position:absolute;left:9mm;right:9mm;bottom:10mm;background:var(--navy);color:#fff;padding:5mm}
+.back .contact .tel{font-size:17px;font-weight:700;letter-spacing:.06em;margin:1mm 0}
+.back .contact p{font-size:7.5px;line-height:1.7}
+
+/* 折り込み面（強み） */
+.fold .num{display:flex;gap:3mm;margin-top:5mm}
+.fold .num div{flex:1;border:0.3mm solid var(--line);padding:3mm 2mm;text-align:center}
+.fold .num b{display:block;font-size:20px;color:var(--blue);letter-spacing:0;line-height:1.2}
+.fold .num b small{font-size:9px;margin-left:.5mm}
+.fold .num span{font-size:7.5px;color:var(--sub);line-height:1.5;display:block;margin-top:1mm}
+.fold img{width:100%;height:46mm;object-fit:cover;display:block;margin-top:6mm}
+
+/* 中面 */
+.inside .p{border-right:0}
+.svc{margin-top:4mm;display:grid;gap:4.2mm}
+.svc .s{display:grid;grid-template-columns:11mm 1fr;gap:3mm;align-items:start;padding-bottom:3.2mm;border-bottom:0.2mm solid var(--line)}
+.svc .s .ic{width:11mm;height:11mm;background:var(--pale);color:var(--blue);font-weight:700;font-size:10px;display:flex;align-items:center;justify-content:center}
+.svc .s strong{font-size:11.5px;color:var(--navy);display:block;line-height:1.5}
+.hero2{margin:-13mm -9mm 6mm;height:62mm;position:relative}
+.hero2 img{width:100%;height:100%;object-fit:cover;display:block}
+.hero2 .cap{position:absolute;left:9mm;bottom:5mm;background:#fff;padding:3mm 4mm;font-size:13px;font-weight:700;color:var(--navy);line-height:1.5}
+.flow{margin-top:4mm}
+.flow li{list-style:none;display:grid;grid-template-columns:13mm 1fr;align-items:center;margin-bottom:2.2mm;background:var(--pale)}
+.flow li b{background:var(--blue);color:#fff;font-size:8px;text-align:center;padding:2.6mm 0;height:100%;display:flex;align-items:center;justify-content:center}
+.flow li span{padding:2.4mm 3mm;font-size:10px;line-height:1.6}
+.flow li:nth-child(even) b{background:var(--navy)}
+.case{background:var(--navy);color:#fff;padding:5mm;margin-top:5mm}
+.case h4{font-size:11.5px;letter-spacing:.06em}
+.case p{font-size:9.4px;opacity:.95;margin-top:1.5mm}
+.case .tag{display:inline-block;background:var(--green);font-size:7px;padding:.4mm 2mm;margin-bottom:2mm}
+.note{position:absolute;right:6mm;bottom:3mm;font-size:6px;color:#8a959d}
+</style>
+</head>
+<body>
+
+<!-- 外面：左から 折り込み面 / 裏表紙 / 表紙 -->
+<div class="sheet">
+  <span class="label">外面（左から：折り込み面／裏表紙／表紙）</span>
+  <div class="p inner-p fold">
+    <p class="en">OUR STRENGTH</p>
+    <h3>地域の設備を、<br>止めないために。</h3>
+    <div class="bar"></div>
+    <p>空調・給排水・電気設備の工事から点検、急なトラブル対応まで。一社でまとめてお任せいただけるので、窓口が増えず、対応の速さにもつながります。</p>
+    <div class="num">
+      <div><b>38<small>年</small></b><span>創業からの<br>実績</span></div>
+      <div><b>24<small>h</small></b><span>緊急時の<br>受付体制</span></div>
+      <div><b>3<small>営業日</small></b><span>見積もり<br>提出の目安</span></div>
+    </div>
+    <img src="../assets/p257736.jpg" alt="">
+    <p style="margin-top:3mm">施工後も同じ担当者が窓口となり、定期点検の時期をこちらからご案内します。</p>
+  </div>
+  <div class="p inner-p back">
+    <p class="en">COMPANY</p>
+    <h3>会社概要</h3>
+    <div class="bar"></div>
+    <table>
+      <tr><th>会社名</th><td>株式会社アオバ設備工業</td></tr>
+      <tr><th>所在地</th><td>〒000-0000<br>東京都○○区○○0-0-0</td></tr>
+      <tr><th>設立</th><td>1988年4月</td></tr>
+      <tr><th>代表者</th><td>代表取締役　青葉 太郎</td></tr>
+      <tr><th>従業員数</th><td>42名（2026年4月現在）</td></tr>
+      <tr><th>事業内容</th><td>空調設備工事、給排水衛生設備工事、電気設備工事、設備の保守点検</td></tr>
+      <tr><th>許可</th><td>東京都知事許可（般-00）第000000号</td></tr>
+    </table>
+    <div class="map"></div>
+    <div class="contact">
+      <p>お見積もり・ご相談はお気軽に</p>
+      <p class="tel">TEL 00-0000-0000</p>
+      <p>受付　平日 8:30〜17:30／緊急対応は24時間</p>
+    </div>
+  </div>
+  <div class="p cover">
+    <img src="../assets/p1216589.jpg" alt="">
+    <div class="stripe"></div>
+    <div class="t">
+      <p class="catch">快適な毎日は、<br>見えない設備が<br>支えている。</p>
+      <p class="sub">空調・給排水・電気設備の設計施工から<br>保守点検まで、ワンストップで。</p>
+    </div>
+    <div class="co"><div class="mark"><i></i><i></i></div><div><b>アオバ設備工業</b><small>AOBA FACILITIES</small></div></div>
+  </div>
+  <span class="guide" style="left:100mm"></span><span class="guide" style="left:200mm"></span>
+  <span class="note">※デザインサンプル（会社名・数値・連絡先は架空）　写真：Pexels</span>
+</div>
+
+<!-- 中面：左から 事業内容 / 施工の流れ / 実績 -->
+<div class="sheet inside">
+  <span class="label">中面（左から：事業内容／ご依頼の流れ／施工事例）</span>
+  <div class="p inner-p">
+    <p class="en">SERVICE</p>
+    <h3>事業内容</h3>
+    <div class="bar"></div>
+    <div class="svc">
+      <div class="s"><span class="ic">空調</span><div><strong>空調設備工事</strong><p>オフィス・店舗・工場の業務用エアコンの新設、入れ替え、移設に対応します。</p></div></div>
+      <div class="s"><span class="ic">給排</span><div><strong>給排水衛生設備工事</strong><p>給水・排水管の更新、トイレや給湯設備の改修。テナント入れ替え時の工事もお任せください。</p></div></div>
+      <div class="s"><span class="ic">電気</span><div><strong>電気設備工事</strong><p>照明のLED化、分電盤の更新、コンセント増設など、省エネと安全の両面からご提案します。</p></div></div>
+      <div class="s" style="border-bottom:none"><span class="ic">点検</span><div><strong>保守点検・緊急対応</strong><p>法定点検から日常の不具合まで。年間契約のお客様は優先して駆けつけます。</p></div></div>
+    </div>
+    <img src="../assets/p16509869.jpg" alt="" style="width:100%;height:44mm;object-fit:cover;display:block;margin-top:2mm">
+  </div>
+  <div class="p inner-p">
+    <div class="hero2"><img src="../assets/p8005397.jpg" alt=""><div class="cap">現地調査から、<br>工事後まで同じ担当者が。</div></div>
+    <p class="en">FLOW</p>
+    <h3>ご依頼の流れ</h3>
+    <ol class="flow">
+      <li><b>STEP1</b><span>お問い合わせ（電話・メール）</span></li>
+      <li><b>STEP2</b><span>現地調査・ヒアリング（無料）</span></li>
+      <li><b>STEP3</b><span>お見積もり・工事計画のご提案</span></li>
+      <li><b>STEP4</b><span>施工（営業時間外の工事も対応）</span></li>
+      <li><b>STEP5</b><span>完了確認・定期点検のご案内</span></li>
+    </ol>
+    <div style="margin-top:5mm;border:0.3mm solid var(--line);padding:4mm">
+      <p style="font-weight:700;color:var(--navy);font-size:10.5px">対応エリア</p>
+      <p>東京23区・多摩地域・神奈川県東部・埼玉県南部<br>※その他の地域もご相談ください。</p>
+    </div>
+  </div>
+  <div class="p inner-p" style="padding-right:12mm">
+    <p class="en">WORKS</p>
+    <h3>施工事例</h3>
+    <div class="bar"></div>
+    <div class="case" style="margin-top:0"><span class="tag">オフィス</span><h4>営業を止めずに空調12台を入れ替え</h4><p>土日の2日間で工事を完了。月曜からの業務に影響なく、電気代も前年同月比で下がりました。</p></div>
+    <div class="case"><span class="tag">飲食店</span><h4>厨房の給排水を全面改修</h4><p>定休日に合わせた分割工事で、休業日を増やさずに老朽化した配管を一新しました。</p></div>
+    <div class="case"><span class="tag">工場</span><h4>照明のLED化と分電盤の更新</h4><p>作業場の明るさを上げつつ、照明の消費電力をおよそ半分に抑えました。</p></div>
+    <p style="margin-top:4mm;color:var(--sub);font-size:7.6px">※事例の内容は一例です。建物の状況により工事内容は異なります。</p>
+  </div>
+  <span class="guide" style="left:100mm"></span><span class="guide" style="left:200mm"></span>
+</div>
+</body>
+</html>

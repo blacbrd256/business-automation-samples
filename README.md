@@ -8,6 +8,7 @@
 | [01 フォーム自動振り分け](01-gas-form-automation/) | 問い合わせを種別ごとに振り分け、担当者に通知し、毎朝件数をレポート | Google Apps Script | 振り分け・入力チェック・集計 |
 | [02 AI記事・SNS自動投稿](02-ai-content-autopost/) | 生成AIで記事とSNS文を下書きし、承認後にWordPress・Blueskyへ投稿 | GAS / OpenAI・Claude・Gemini / WordPress REST API | 二重投稿防止・再試行・文字数制御 |
 | [03 新設法人リスト作成](03-python-company-list/) | 国税庁の公開データから新設法人を抽出し、Excel／CSVの営業リストに | Python | チェックデジット・正規化・重複統合 |
+| [04 デザインサンプル](04-design-samples/) | サロンのLP、会社案内（三つ折り）、広告バナー | HTML／CSS・印刷用PDF | ― |
 
 ## 共通して大切にしていること
 

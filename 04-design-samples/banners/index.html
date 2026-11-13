@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><title>広告バナー（デザインサンプル）</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Noto Sans CJK JP",sans-serif;background:#ccc;padding:20px;display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start}
+.bn{position:relative;overflow:hidden;background:#fff;color:#2b2b2b}
+.serif{font-family:"Noto Serif CJK JP",serif}
+/* 1: Instagram 1080x1080 */
+#b1{width:1080px;height:1080px}
+#b1 img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+#b1 .panel{position:absolute;left:0;bottom:0;width:100%;height:450px;background:#fff;padding:56px 70px}
+#b1 .lbl{display:inline-block;background:#b8737a;color:#fff;font-size:30px;padding:6px 22px;letter-spacing:.1em}
+#b1 h1{font-family:"Noto Serif CJK JP",serif;font-weight:500;font-size:60px;letter-spacing:.06em;line-height:1.35;margin-top:26px}
+#b1 .pr{position:absolute;right:70px;bottom:62px;text-align:right;font-family:"Noto Serif CJK JP",serif}
+#b1 .pr s{font-size:30px;color:#8a7f7c}
+#b1 .pr b{display:block;font-size:100px;color:#9a5960;line-height:1;letter-spacing:-.01em}
+#b1 .pr small{font-size:28px;color:#2b2b2b}
+#b1 .shop{position:absolute;left:70px;bottom:56px;font-size:26px;color:#6d6461;letter-spacing:.06em}
+#b1 .v{position:absolute;right:70px;top:70px;writing-mode:vertical-rl;color:#fff;font-family:"Noto Serif CJK JP",serif;font-size:44px;letter-spacing:.2em;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+/* 2: 1200x628 */
+#b2{width:1200px;height:628px;display:grid;grid-template-columns:560px 1fr}
+#b2 img{width:100%;height:100%;object-fit:cover}
+#b2 .r{padding:64px 60px;position:relative;background:#f7f3f1}
+#b2 .r .en{font-family:"Noto Serif CJK JP",serif;letter-spacing:.3em;color:#b39a6b;font-size:20px}
+#b2 h2{font-family:"Noto Serif CJK JP",serif;font-weight:500;font-size:46px;line-height:1.45;margin:14px 0 22px}
+#b2 ul{list-style:none;font-size:22px;line-height:1.9;color:#4a423f}
+#b2 li:before{content:"";display:inline-block;width:10px;height:10px;background:#b8737a;margin-right:12px;vertical-align:middle}
+#b2 .btn{position:absolute;left:60px;right:60px;bottom:56px;background:#9a5960;color:#fff;text-align:center;font-size:28px;font-weight:700;padding:20px;letter-spacing:.08em}
+#b2 .btn span{font-family:"Noto Serif CJK JP",serif;font-size:36px;margin-left:8px}
+/* 3: 300x250 */
+#b3{width:300px;height:250px;background:#9a5960;color:#fff}
+#b3 img{position:absolute;left:0;top:0;width:100%;height:132px;object-fit:cover;object-position:50% 30%}
+#b3 .t{position:absolute;left:0;right:0;top:132px;padding:12px 16px}
+#b3 p{font-size:12px;letter-spacing:.05em}
+#b3 .pr{font-family:"Noto Serif CJK JP",serif;font-size:15px;margin-top:2px}
+#b3 .pr b{font-size:34px;font-weight:600}
+#b3 .go{position:absolute;right:14px;bottom:14px;background:#fff;color:#9a5960;font-size:12px;font-weight:700;padding:6px 10px}
+#b3 .tag{position:absolute;left:10px;top:10px;background:#fff;color:#9a5960;font-size:11px;font-weight:700;padding:3px 8px}
+</style></head><body>
+<div class="bn" id="b1"><img src="../assets/p6663571.jpg" alt=""><div class="v">ほどけて、ととのう。</div>
+  <div class="panel"><span class="lbl">初回限定</span><h1>骨格から整える<br>小顔・美容整体</h1><p class="shop">凪 -nagi-　表参道駅 徒歩4分</p>
+  <p class="pr"><s>通常 ¥9,800</s><b>¥4,980</b><small>（税込）60分</small></p></div></div>
+<div class="bn" id="b2"><img src="../assets/p3764568.jpg" alt=""><div class="r"><p class="en">FIRST VISIT</p><h2>写真に写る顔、<br>すっきり見せたい方へ。</h2>
+  <ul><li>国家資格をもつ施術者が担当</li><li>痛くない、やさしい手技</li><li>完全個室・女性施術者のみ</li></ul>
+  <div class="btn">初回 60分<span>¥4,980</span> で予約する</div></div></div>
+<div class="bn" id="b3"><img src="../assets/p3985329.jpg" alt=""><span class="tag">表参道</span><div class="t"><p>骨格から整える小顔整体</p><p class="pr">初回 <b>¥4,980</b></p></div><span class="go">予約する ›</span></div>
+</body></html>

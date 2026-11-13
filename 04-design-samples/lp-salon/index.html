@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>小顔・美容整体 凪 -nagi-（デザインサンプル）</title>
+<style>
+:root{
+  --ink:#2b2b2b; --sub:#6d6461; --rose:#b8737a; --rose-d:#9a5960; --rose-l:#f4e6e6;
+  --gold:#b39a6b; --line:#e4dcd8; --bg2:#f7f3f1;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Noto Sans CJK JP",sans-serif;color:var(--ink);background:#fff;font-size:14px;line-height:1.85;letter-spacing:.04em;width:390px}
+.serif{font-family:"Noto Serif CJK JP",serif}
+img{display:block;width:100%}
+.en{font-family:"Noto Serif CJK JP",serif;font-size:11px;letter-spacing:.3em;color:var(--gold)}
+section{padding:56px 24px}
+h2{font-family:"Noto Serif CJK JP",serif;font-weight:500;font-size:22px;line-height:1.6;letter-spacing:.08em;margin-top:6px}
+.center{text-align:center}
+
+/* header */
+header{position:absolute;top:0;left:0;width:390px;display:flex;justify-content:space-between;align-items:center;padding:14px 18px;z-index:5}
+.logo{font-family:"Noto Serif CJK JP",serif;color:#fff;font-size:18px;letter-spacing:.2em;line-height:1.2}
+.logo small{display:block;font-size:9px;letter-spacing:.25em;opacity:.85}
+.menu{width:26px;height:14px;border-top:1px solid #fff;border-bottom:1px solid #fff;position:relative}
+.menu:after{content:"";position:absolute;left:0;right:0;top:6px;border-top:1px solid #fff}
+
+/* FV */
+.fv{position:relative;height:640px;overflow:hidden}
+.fv img{height:100%;object-fit:cover;object-position:62% center;filter:brightness(.82)}
+.fv .copy{position:absolute;right:26px;top:96px;color:#fff;writing-mode:vertical-rl;font-family:"Noto Serif CJK JP",serif;font-size:30px;line-height:1.75;letter-spacing:.18em;text-shadow:0 1px 8px rgba(0,0,0,.25)}
+.fv .lead{position:absolute;left:24px;bottom:150px;color:#fff;font-size:13px;line-height:1.9;text-shadow:0 1px 6px rgba(0,0,0,.35)}
+.fv .badge{position:absolute;left:24px;bottom:28px;right:24px;background:rgba(255,255,255,.94);padding:14px 16px;display:flex;align-items:center;gap:14px}
+.badge .tag{background:var(--rose);color:#fff;font-size:11px;padding:4px 8px;line-height:1.4;text-align:center}
+.badge .price{font-family:"Noto Serif CJK JP",serif;font-size:13px;line-height:1.4}
+.badge .price b{font-size:30px;color:var(--rose-d);font-weight:600;letter-spacing:0}
+.badge .price s{color:var(--sub);font-size:11px;margin-right:4px}
+
+/* worries */
+.worry{background:var(--bg2)}
+.worry ul{list-style:none;margin-top:26px;background:#fff;padding:22px 20px}
+.worry li{padding:9px 0 9px 28px;border-bottom:1px dashed var(--line);position:relative}
+.worry li:last-child{border-bottom:none}
+.worry li:before{content:"";position:absolute;left:2px;top:15px;width:14px;height:14px;border:1px solid var(--rose)}
+.worry li:after{content:"";position:absolute;left:6px;top:15px;width:5px;height:9px;border-right:2px solid var(--rose);border-bottom:2px solid var(--rose);transform:rotate(45deg)}
+.worry .arrow{width:0;height:0;margin:22px auto 0;border-left:22px solid transparent;border-right:22px solid transparent;border-top:16px solid var(--rose)}
+.worry .ans{margin-top:18px;font-family:"Noto Serif CJK JP",serif;font-size:18px;text-align:center;line-height:1.7}
+.worry .ans em{font-style:normal;color:var(--rose-d);border-bottom:1px solid var(--rose)}
+
+/* concept */
+.concept p{margin-top:20px;color:var(--sub)}
+.concept .img2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:26px}
+.concept .img2 img{height:190px;object-fit:cover}
+
+/* reasons */
+.reason .item{margin-top:40px}
+.reason .num{font-family:"Noto Serif CJK JP",serif;color:var(--gold);font-size:13px;letter-spacing:.2em}
+.reason .num b{font-size:36px;font-weight:400;margin-left:4px;letter-spacing:0}
+.reason h3{font-family:"Noto Serif CJK JP",serif;font-weight:500;font-size:18px;line-height:1.6;margin:4px 0 14px}
+.reason img{height:210px;object-fit:cover;margin-bottom:14px}
+.reason p{color:var(--sub);font-size:13.5px}
+
+/* menu */
+.menuprice{background:var(--bg2)}
+.card{background:#fff;margin-top:22px;padding:22px 20px;border-top:3px solid var(--rose)}
+.card .name{font-family:"Noto Serif CJK JP",serif;font-size:17px}
+.card .time{font-size:12px;color:var(--sub)}
+.card .row{display:flex;justify-content:space-between;align-items:baseline;margin-top:10px;border-top:1px solid var(--line);padding-top:10px}
+.card .row span{font-size:12px;color:var(--sub)}
+.card .row b{font-family:"Noto Serif CJK JP",serif;font-size:22px;font-weight:600;letter-spacing:0}
+.card .row.first b{color:var(--rose-d);font-size:26px}
+.card .row.first span{color:var(--rose-d)}
+.card p.desc{font-size:12.5px;color:var(--sub);margin-top:8px}
+.note{font-size:11px;color:var(--sub);margin-top:14px}
+
+/* voice */
+.voice .v{margin-top:24px;border:1px solid var(--line);padding:20px}
+.voice .who{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.voice .ico{width:44px;height:44px;border-radius:50%;background:var(--rose-l);display:flex;align-items:center;justify-content:center;font-family:"Noto Serif CJK JP",serif;color:var(--rose-d);font-size:15px}
+.voice .who div{font-size:12px;color:var(--sub);line-height:1.5}
+.voice .who strong{display:block;color:var(--ink);font-size:14px;font-weight:500}
+.voice p{font-size:13.5px}
+.voice small{display:block;font-size:10.5px;color:var(--sub);margin-top:10px}
+
+/* flow */
+.flow ol{list-style:none;margin-top:26px;counter-reset:f}
+.flow li{position:relative;padding:0 0 22px 52px}
+.flow li:before{counter-increment:f;content:counter(f,decimal-leading-zero);position:absolute;left:0;top:0;width:38px;height:38px;border:1px solid var(--gold);color:var(--gold);font-family:"Noto Serif CJK JP",serif;display:flex;align-items:center;justify-content:center;font-size:13px}
+.flow li:after{content:"";position:absolute;left:19px;top:42px;bottom:4px;border-left:1px solid var(--line)}
+.flow li:last-child:after{display:none}
+.flow strong{font-weight:500;display:block}
+.flow span{font-size:12.5px;color:var(--sub)}
+
+/* faq */
+.faq{background:var(--bg2)}
+.faq dl{margin-top:22px}
+.faq dt{background:#fff;padding:14px 16px 14px 44px;position:relative;font-weight:500;margin-top:10px}
+.faq dt:before{content:"Q";position:absolute;left:16px;top:12px;font-family:"Noto Serif CJK JP",serif;color:var(--rose);font-size:17px}
+.faq dd{background:#fff;padding:2px 16px 16px 44px;position:relative;font-size:13px;color:var(--sub);border-top:1px dashed var(--line)}
+.faq dd:before{content:"A";position:absolute;left:16px;top:6px;font-family:"Noto Serif CJK JP",serif;color:var(--gold);font-size:17px}
+
+/* access */
+.access table{width:100%;border-collapse:collapse;margin-top:20px;font-size:13px}
+.access th{width:84px;text-align:left;font-weight:500;padding:11px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.access td{padding:11px 0;border-bottom:1px solid var(--line);color:var(--sub)}
+.map{margin-top:18px;height:170px;background:repeating-linear-gradient(0deg,#eee 0 1px,transparent 1px 34px),repeating-linear-gradient(90deg,#eee 0 1px,transparent 1px 34px),#f8f8f8;position:relative}
+.map:after{content:"凪";position:absolute;left:52%;top:40%;background:var(--rose);color:#fff;font-family:"Noto Serif CJK JP",serif;width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-size:14px}
+.map .rd1{position:absolute;left:0;right:0;top:58%;height:10px;background:#fff;border-top:1px solid #ddd;border-bottom:1px solid #ddd}
+.map .rd2{position:absolute;top:0;bottom:0;left:30%;width:10px;background:#fff;border-left:1px solid #ddd;border-right:1px solid #ddd}
+.map .st{position:absolute;left:6%;top:72%;font-size:10px;color:var(--sub)}
+
+/* cta */
+.cta{background:var(--rose-d);color:#fff;text-align:center;padding:44px 24px}
+.cta .s{font-size:13px}
+.cta .big{font-family:"Noto Serif CJK JP",serif;font-size:21px;margin:6px 0 18px}
+.btn{display:block;background:#fff;color:var(--rose-d);font-weight:700;padding:16px;font-size:16px;letter-spacing:.1em;position:relative}
+.btn:after{content:"";position:absolute;right:20px;top:50%;width:8px;height:8px;border-top:2px solid var(--rose-d);border-right:2px solid var(--rose-d);transform:translateY(-50%) rotate(45deg)}
+.btn.line{background:transparent;color:#fff;border:1px solid #fff;margin-top:10px;font-weight:500;font-size:14px}
+.btn.line:after{border-color:#fff}
+.cta small{display:block;margin-top:14px;font-size:11px;opacity:.85}
+footer{background:#2b2b2b;color:#bbb;font-size:10.5px;text-align:center;padding:22px 20px 90px;line-height:1.8}
+footer .logo{display:inline-block;margin-bottom:6px}
+
+/* fixed bar */
+.fixed{position:absolute;left:0;bottom:0;width:390px;display:grid;grid-template-columns:1fr 1.4fr;box-shadow:0 -2px 10px rgba(0,0,0,.08)}
+.fixed a{display:flex;align-items:center;justify-content:center;height:58px;font-size:13px;font-weight:700;letter-spacing:.05em}
+.fixed .t{background:#fff;color:var(--ink)}
+.fixed .r{background:var(--rose);color:#fff;flex-direction:column;line-height:1.3}
+.fixed .r small{font-size:10px;font-weight:400}
+</style>
+</head>
+<body style="position:relative">
+<header><div class="logo">凪<small>KOGAO &amp; SEITAI</small></div><div class="menu"></div></header>
+
+<div class="fv">
+  <img src="../assets/p3985329.jpg" alt="">
+  <div class="copy">ほどけて、<br>ととのう。</div>
+  <p class="lead">骨格から整える、小顔・美容整体。<br>表参道駅 徒歩4分の完全個室サロン</p>
+  <div class="badge">
+    <div class="tag">初回<br>限定</div>
+    <div class="price">小顔整体 60分<br><s>¥9,800</s><b>¥4,980</b>（税込）</div>
+  </div>
+</div>
+
+<section class="worry">
+  <p class="en center">TROUBLE</p>
+  <h2 class="center">こんなお悩み、<br>ありませんか？</h2>
+  <ul>
+    <li>写真に写ると、顔が大きく見える</li>
+    <li>夕方になると、むくみで輪郭がぼやける</li>
+    <li>左右の目の高さや口角が気になる</li>
+    <li>マッサージに通っても、すぐ元に戻る</li>
+    <li>デスクワークで首や肩がいつも重い</li>
+  </ul>
+  <div class="arrow"></div>
+  <p class="ans">原因は「顔」ではなく、<br><em>首・肩・骨格のゆがみ</em>にあります。</p>
+</section>
+
+<section class="concept">
+  <p class="en">CONCEPT</p>
+  <h2>顔だけを触らない、<br>小顔ケア。</h2>
+  <p>頭や顔の大きさの印象は、首や肩まわりの筋肉のこわばり、姿勢のくせから生まれます。凪では、背中から首、頭、顔へと順にゆるめて整えることで、変化が長く続く状態をめざします。強い力は使わず、眠ってしまう方も多い、やさしい施術です。</p>
+  <div class="img2"><img src="../assets/p6663571.jpg" alt=""><img src="../assets/p3865676.jpg" alt=""></div>
+</section>
+
+<section class="reason" style="padding-top:20px">
+  <p class="en center">REASON</p>
+  <h2 class="center">凪が選ばれる<br>3つの理由</h2>
+  <div class="item">
+    <p class="num">POINT<b>01</b></p>
+    <h3>国家資格をもつ施術者が<br>カウンセリングから担当</h3>
+    <img src="../assets/p3764568.jpg" alt="">
+    <p>姿勢と骨格のバランスをチェックし、お悩みの原因をお伝えしてから施術に入ります。最初から最後まで同じ施術者が担当します。</p>
+  </div>
+  <div class="item">
+    <p class="num">POINT<b>02</b></p>
+    <h3>痛くない、ボキボキしない。<br>やさしい手技</h3>
+    <img src="../assets/p5069432.jpg" alt="">
+    <p>骨を鳴らすような強い矯正は行いません。筋肉と筋膜をゆるめて、骨格が自然に整う位置へ導きます。</p>
+  </div>
+  <div class="item">
+    <p class="num">POINT<b>03</b></p>
+    <h3>完全個室・女性施術者のみ。<br>メイク直しスペースつき</h3>
+    <img src="../assets/p3757942.jpg" alt="">
+    <p>人目を気にせず過ごせる個室をご用意。施術後はパウダースペースで、そのままお出かけいただけます。</p>
+  </div>
+</section>
+
+<section class="menuprice">
+  <p class="en center">MENU &amp; PRICE</p>
+  <h2 class="center">メニュー・料金</h2>
+  <div class="card">
+    <p class="name">小顔整体</p><p class="time">60分</p>
+    <p class="desc">首・肩から頭、顔までを整える基本のコース。</p>
+    <div class="row first"><span>初回限定</span><b>¥4,980</b></div>
+    <div class="row"><span>通常</span><b>¥9,800</b></div>
+  </div>
+  <div class="card">
+    <p class="name">小顔整体＋骨盤調整</p><p class="time">90分</p>
+    <p class="desc">姿勢から見直したい方に。全身のバランスを整えます。</p>
+    <div class="row first"><span>初回限定</span><b>¥7,980</b></div>
+    <div class="row"><span>通常</span><b>¥14,300</b></div>
+  </div>
+  <p class="note">※表示価格はすべて税込です。<br>※初回限定価格は、おひとり様1回限りとなります。</p>
+</section>
+
+<section class="voice">
+  <p class="en center">VOICE</p>
+  <h2 class="center">お客様の声</h2>
+  <div class="v"><div class="who"><span class="ico">M</span><div><strong>M.Sさま</strong>30代・会社員</div></div>
+    <p>1回目の施術後、鏡を見てフェイスラインがすっきりしていて驚きました。首の重さも軽くなり、今は月1回のメンテナンスで通っています。</p></div>
+  <div class="v"><div class="who"><span class="ico">K</span><div><strong>K.Tさま</strong>40代・主婦</div></div>
+    <p>痛いのが苦手でしたが、とても気持ちよく途中で眠ってしまいました。個室なのでリラックスできます。</p></div>
+  <small>※個人の感想であり、効果を保証するものではありません。</small>
+</section>
+
+<section class="flow">
+  <p class="en center">FLOW</p>
+  <h2 class="center">ご来店から施術まで</h2>
+  <ol>
+    <li><strong>WEB予約・LINE予約</strong><span>24時間受付。ご希望の日時をお選びください。</span></li>
+    <li><strong>カウンセリング</strong><span>お悩みやお体の状態を伺い、姿勢を確認します。</span></li>
+    <li><strong>施術</strong><span>背中・首・頭・顔の順に、ゆっくり整えます。</span></li>
+    <li><strong>アフターケアのご案内</strong><span>ご自宅でできるセルフケアをお伝えします。</span></li>
+  </ol>
+</section>
+
+<section class="faq">
+  <p class="en center">FAQ</p>
+  <h2 class="center">よくあるご質問</h2>
+  <dl>
+    <dt>1回でも効果はありますか？</dt><dd>施術直後から変化を感じる方が多いです。状態をキープするには、2〜3週間おきに数回通っていただくのがおすすめです。</dd>
+    <dt>着替えは必要ですか？</dt><dd>お着替えをご用意しています。お仕事帰りでも、そのままお越しください。</dd>
+    <dt>メイクをしたままでも大丈夫ですか？</dt><dd>お顔の施術前にメイクを落としていただきます。クレンジング・パウダースペースをご用意しています。</dd>
+  </dl>
+</section>
+
+<section class="access">
+  <p class="en center">ACCESS</p>
+  <h2 class="center">店舗情報</h2>
+  <div class="map"><div class="rd1"></div><div class="rd2"></div><span class="st">表参道駅 A2出口</span></div>
+  <table>
+    <tr><th>住所</th><td>東京都港区南青山0-0-0 サンプルビル3F</td></tr>
+    <tr><th>アクセス</th><td>東京メトロ「表参道駅」A2出口より徒歩4分</td></tr>
+    <tr><th>営業時間</th><td>10:00〜21:00（最終受付 19:30）</td></tr>
+    <tr><th>定休日</th><td>不定休</td></tr>
+  </table>
+</section>
+
+<div class="cta">
+  <p class="s">＼ 毎月10名様限定 ／</p>
+  <p class="big">初回 小顔整体 60分 ¥4,980</p>
+  <a class="btn">WEBで空き状況を見る</a>
+  <a class="btn line">LINEで予約・相談する</a>
+  <small>当日のご予約は、お電話でも承っております。</small>
+</div>
+
+<footer><span class="logo">凪</span><br>※本ページはデザインのサンプルです。店舗名・住所・料金・お客様の声はすべて架空のものです。<br>写真：Pexels</footer>
+
+<div class="fixed"><a class="t">電話で予約</a><a class="r">初回 ¥4,980 で予約する<small>WEB予約 24時間受付</small></a></div>
+</body>
+</html>
